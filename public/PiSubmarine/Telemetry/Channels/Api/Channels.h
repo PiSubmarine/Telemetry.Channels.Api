@@ -4,33 +4,14 @@
 
 namespace PiSubmarine::Telemetry::Channels::Api
 {
-    [[nodiscard]] inline const ::PiSubmarine::Telemetry::Api::ChannelId& BatteryMain() noexcept
-    {
-        static const ::PiSubmarine::Telemetry::Api::ChannelId channelId{.Value = "battery.main"};
-        return channelId;
-    }
-
-    [[nodiscard]] inline const ::PiSubmarine::Telemetry::Api::ChannelId& MotorFrontLeft() noexcept
-    {
-        static const ::PiSubmarine::Telemetry::Api::ChannelId channelId{.Value = "motor.front-left"};
-        return channelId;
-    }
-
-    [[nodiscard]] inline const ::PiSubmarine::Telemetry::Api::ChannelId& MotorFrontRight() noexcept
-    {
-        static const ::PiSubmarine::Telemetry::Api::ChannelId channelId{.Value = "motor.front-right"};
-        return channelId;
-    }
-
-    [[nodiscard]] inline const ::PiSubmarine::Telemetry::Api::ChannelId& MotorRearLeft() noexcept
-    {
-        static const ::PiSubmarine::Telemetry::Api::ChannelId channelId{.Value = "motor.rear-left"};
-        return channelId;
-    }
-
-    [[nodiscard]] inline const ::PiSubmarine::Telemetry::Api::ChannelId& MotorRearRight() noexcept
-    {
-        static const ::PiSubmarine::Telemetry::Api::ChannelId channelId{.Value = "motor.rear-right"};
-        return channelId;
-    }
+    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId BallastMain{.Value = "ballast.main"};
+    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId BatteryMain{.Value = "battery.main"};
+    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId DepthMain{.Value = "depth.main"};
+    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId LampMain{.Value = "lamp.main"};
+    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId MotorFrontLeft{.Value = "motor.front-left"};
+    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId MotorFrontRight{.Value = "motor.front-right"};
+    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId MotorRearLeft{.Value = "motor.rear-left"};
+    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId MotorRearRight{.Value = "motor.rear-right"};
+    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId ProximityMain{.Value = "proximity.main"};
+    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId VideoMain{.Value = "video.main"};
 }
