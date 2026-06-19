@@ -6,16 +6,16 @@ namespace PiSubmarine::Telemetry::Channels::Api
 {
     TEST(ChannelsTest, ExposesStableSharedChannelIds)
     {
-        EXPECT_EQ(BallastMain.Value, "ballast.main");
-        EXPECT_EQ(BatteryMain.Value, "battery.main");
-        EXPECT_EQ(DepthMain.Value, "depth.main");
-        EXPECT_EQ(LampMain.Value, "lamp.main");
-        EXPECT_EQ(MotorFrontLeft.Value, "motor.front-left");
-        EXPECT_EQ(MotorFrontRight.Value, "motor.front-right");
-        EXPECT_EQ(MotorRearLeft.Value, "motor.rear-left");
-        EXPECT_EQ(MotorRearRight.Value, "motor.rear-right");
-        EXPECT_EQ(ProximityMain.Value, "proximity.main");
-        EXPECT_EQ(VideoMain.Value, "video.main");
+        EXPECT_EQ(BallastMain, "ballast.main");
+        EXPECT_EQ(BatteryMain, "battery.main");
+        EXPECT_EQ(DepthMain, "depth.main");
+        EXPECT_EQ(LampMain, "lamp.main");
+        EXPECT_EQ(MotorFrontLeft, "motor.front-left");
+        EXPECT_EQ(MotorFrontRight, "motor.front-right");
+        EXPECT_EQ(MotorRearLeft, "motor.rear-left");
+        EXPECT_EQ(MotorRearRight, "motor.rear-right");
+        EXPECT_EQ(ProximityMain, "proximity.main");
+        EXPECT_EQ(VideoMain, "video.main");
     }
 
     TEST(ChannelsTest, ValuesAreSharedInstances)

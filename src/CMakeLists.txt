@@ -5,6 +5,3 @@ add_library(${PISUBMARINE_MODULE_NAME} INTERFACE
         "../public/PiSubmarine/Telemetry/Channels/Api/Channels.h")
 target_include_directories(${PISUBMARINE_MODULE_NAME} INTERFACE "../public")
 PiSubmarineInitTarget(${PISUBMARINE_MODULE_NAME})
-
-PiSubmarineAddDependency("https://github.com/PiSubmarine/Telemetry.Api.git" "")
-target_link_libraries(${PISUBMARINE_MODULE_NAME} INTERFACE PiSubmarine.Telemetry.Api)

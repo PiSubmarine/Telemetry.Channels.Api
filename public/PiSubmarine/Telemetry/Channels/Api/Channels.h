@@ -1,17 +1,17 @@
 #pragma once
 
-#include "PiSubmarine/Telemetry/Api/ChannelId.h"
+#include <string_view>
 
 namespace PiSubmarine::Telemetry::Channels::Api
 {
-    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId BallastMain{.Value = "ballast.main"};
-    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId BatteryMain{.Value = "battery.main"};
-    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId DepthMain{.Value = "depth.main"};
-    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId LampMain{.Value = "lamp.main"};
-    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId MotorFrontLeft{.Value = "motor.front-left"};
-    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId MotorFrontRight{.Value = "motor.front-right"};
-    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId MotorRearLeft{.Value = "motor.rear-left"};
-    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId MotorRearRight{.Value = "motor.rear-right"};
-    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId ProximityMain{.Value = "proximity.main"};
-    inline constexpr ::PiSubmarine::Telemetry::Api::ChannelId VideoMain{.Value = "video.main"};
+    inline constexpr std::string_view BallastMain = "ballast.main";
+    inline constexpr std::string_view BatteryMain = "battery.main";
+    inline constexpr std::string_view DepthMain = "depth.main";
+    inline constexpr std::string_view LampMain = "lamp.main";
+    inline constexpr std::string_view MotorFrontLeft = "motor.front-left";
+    inline constexpr std::string_view MotorFrontRight = "motor.front-right";
+    inline constexpr std::string_view MotorRearLeft = "motor.rear-left";
+    inline constexpr std::string_view MotorRearRight = "motor.rear-right";
+    inline constexpr std::string_view ProximityMain = "proximity.main";
+    inline constexpr std::string_view VideoMain = "video.main";
 }
