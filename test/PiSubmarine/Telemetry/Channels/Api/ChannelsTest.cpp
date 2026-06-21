@@ -15,6 +15,7 @@ namespace PiSubmarine::Telemetry::Channels::Api
         EXPECT_EQ(MotorRearLeft, "motor.rear-left");
         EXPECT_EQ(MotorRearRight, "motor.rear-right");
         EXPECT_EQ(ProximityMain, "proximity.main");
+        EXPECT_EQ(TimeMain, "time.main");
         EXPECT_EQ(VideoMain, "video.main");
     }
 
@@ -29,6 +30,7 @@ namespace PiSubmarine::Telemetry::Channels::Api
         EXPECT_EQ(&MotorRearLeft, &MotorRearLeft);
         EXPECT_EQ(&MotorRearRight, &MotorRearRight);
         EXPECT_EQ(&ProximityMain, &ProximityMain);
+        EXPECT_EQ(&TimeMain, &TimeMain);
         EXPECT_EQ(&VideoMain, &VideoMain);
     }
 }

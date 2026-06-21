@@ -13,5 +13,6 @@ namespace PiSubmarine::Telemetry::Channels::Api
     inline constexpr std::string_view MotorRearLeft = "motor.rear-left";
     inline constexpr std::string_view MotorRearRight = "motor.rear-right";
     inline constexpr std::string_view ProximityMain = "proximity.main";
+    inline constexpr std::string_view TimeMain = "time.main";
     inline constexpr std::string_view VideoMain = "video.main";
 }
